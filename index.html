@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume-builder">
+        <div class="name">
+        <h1>Dynamic Resume Builder By Huzaifa</h1>
+    </div>
+        <form id="resume-form">
+            <section>
+                <h2>Profile Information</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone">
+            </section>
+
+            <section id="experience-section">
+                <h2>Experience</h2>
+                <div id="experience-container"></div>
+                <button type="button" id="add-experience">Add Experience +</button>
+            </section>
+
+            <section id="skills-section">
+                <h2>Skills</h2>
+                <div id="skills-container"></div>
+                <button type="button" id="add-skill">Add Skill +</button>
+            </section>
+
+            <section id="education-section">
+                <h2>Education</h2>
+                <div id="education-container"></div>
+                <button type="button" id="add-education">Add Education +</button>
+            </section>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <div id="resume-output" class="hidden">
+            <h1>Resume</h1>
+            <div id="resume-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
